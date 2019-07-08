@@ -11,6 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        text_title.text = getString(R.string.greeting_training)
+
+        image_view.setImageResource(R.drawable.ic_launcher_foreground)
 
         button_calculate.setOnClickListener {
             if (!TextUtils.isEmpty(number_1.text) && !TextUtils.isEmpty(number_2.text)) {
