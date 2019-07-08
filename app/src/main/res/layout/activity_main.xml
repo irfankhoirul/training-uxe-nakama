@@ -1,81 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#bbb"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:padding="48dp"
-    tools:context=".MainActivity">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#bbb"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:padding="48dp"
+              tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/text_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/greeting_training"
-        android:textColor="#ffffff" />
+            android:id="@+id/text_title"
+            style="@style/TextView"
+            android:text="@string/greeting_training"/>
 
     <ImageView
-        android:id="@+id/image_view"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="50dp"
-        android:src="@drawable/ic_launcher_foreground" />
+            android:id="@+id/image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="50dp"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/number_1"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:gravity="center"
-            android:inputType="number"
-            android:textColor="#fff"
-            android:textSize="30sp"
-            tools:text="1" />
+                android:id="@+id/number_1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                tools:text="1"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"/>
 
         <EditText
-            android:id="@+id/number_2"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:gravity="center"
-            android:inputType="number"
-            android:textColor="#fff"
-            android:textSize="30sp"
-            tools:text="1" />
+                android:id="@+id/number_2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                tools:text="1"/>
 
         <Button
-            android:id="@+id/button_calculate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Calculate" />
+                android:id="@+id/button_calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate"/>
 
         <TextView
-            android:id="@+id/text_result"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:text=""
-            android:textColor="#fff"
-            android:textSize="30sp" />
+                android:id="@+id/text_result"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="30sp"/>
 
     </LinearLayout>
-
 
 </LinearLayout>
